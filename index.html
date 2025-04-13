@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sergious Beryl | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Sergious</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero" class="section hero-section">
+  <header>
+   <!-- NAVBAR START -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand menus" href="#home" style="display: flex; align-items: center;">
+        <img src="assets/images/logo-icon.png" alt="Logo" style="width: 24px; height: 24px; margin-right: 8px;">
+        Sergious Beryl
+      </a>
+    </div>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="portfolio-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a class="nav-link section-anchor" href="#home">About</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#contact">Contact</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+  </header>
+  
+
+  <section id="home" class="section hero-section">
+    <div class="profile-container">
+      <img src="assets/images/Profile-Pic.png" alt="Profile Picture" class="profile-pic">
+    </div>
     <h1>Hi, I'm Sergious Beryl</h1>
     <p>Aspiring QA Automation Engineer | Java | Selenium | TestNG</p>
     <p> </p>
@@ -29,7 +60,7 @@
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Short bio goes here...</p>
+    <p>A dynamic project manager with a proven track record of leading cross-functional teams to deliver complex projects on time and within budget. With 10+ years of experience in the construction industry, I excel at risk management, stakeholder communication, and process optimization. I'm adept at utilizing project management tools and methodologies, including Agile and Waterfall. I am very proud of my work on the downtown revitalization project, that came in 5% under budget. I am a firm believer in fostering a collaborative and supportive team environment. Outside of work, I am a volunteer for habitat for humanity, and enjoy learning new skills. I am seeking a leadership role where I can leverage my expertise to drive project success and contribute to organizational growth.</p>
   </section>
 
 
@@ -158,7 +189,12 @@
   <footer>
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
+<!-- Bootstrap 3.4.1 JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
   <script src="assets/js/script.js"></script>
+  
 </body>
 </html>
