@@ -177,18 +177,14 @@
   /*   Logo    */
   .logo {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: left;
+    gap: 50px;
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
     color: #333;
   }
   
-  .logo-icon {
-    width: 24px;
-    height: 24px;
-  }
   
 /*   Profile picture   */
   .profile-container {
