@@ -191,38 +191,132 @@
   }
 
   /*experience sections starts here  */
-  .experience-timeline {
+  .exp-header {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem;
-    text-align: left;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: flex-start;
+    gap: 1rem;
   }
-    
-
-.exp-item {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-left: 4px solid #0072ff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  border-radius: 10px;
-}
-.project-tile,
-.exp-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-tile:hover,
-.exp-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
+  
+  .exp-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .exp-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .exp-text h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem; /* adds space below the heading */
+  }
+  
+  .exp-text p {
+    margin: 0.25rem 0; /* uniform spacing above and below each <p> */
+  }
+  
+  .exp-text p strong {
+    display: block; /* ensures consistent vertical flow */
+  }
+  .exp-text {
+    padding-top: 0.1rem;
+  }
+  
+  .exp-description {
+    margin-left: 4.5rem; /* Makes the description text align properly */
+  }
+  .exp-item ul {
+    margin-left: 4.5rem; /* Makes the reoles & responsibility list align properly */
+  }
+    .experience-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      
+  
+  .exp-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 4px solid #0072ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+  }
+  .project-tile,
+  .exp-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-tile:hover,
+  .exp-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
 /*experience sections ends here  */
   
  /*Education sections starts here  */
+ .edu-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+
+
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edu-text h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem; /* adds space below the heading */
+}
+
+.edu-text p {
+  margin: 0.25rem 0; /* uniform spacing above and below each <p> */
+}
+
+.edu-text p strong {
+  display: block; /* ensures consistent vertical flow */
+}
+.edu-text {
+  padding-top: 0.1rem;
+}
+
+.edu-description {
+  margin-left: 4.5rem; /* Makes the description text align properly */
+}
+
   .education-timeline {
     display: flex;
     flex-direction: column;
