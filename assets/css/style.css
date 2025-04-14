@@ -67,6 +67,34 @@
     padding: 6rem 2rem;
   }
   /*  hero-section ends here  */
+
+   /*   Logo    */
+   .logo {
+    display: flex;
+    align-items: left;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  
+/*   Profile picture   */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
   
   .cta-button {
     background-color: #fff;
@@ -161,8 +189,40 @@
     
     border-bottom: 2px solid #07a72a;
   }
-  
 
+  /*experience sections starts here  */
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+
+.exp-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #0072ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+.project-tile,
+.exp-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover,
+.exp-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/*experience sections ends here  */
+  
+ /*Education sections starts here  */
   .education-timeline {
     display: flex;
     flex-direction: column;
@@ -173,45 +233,31 @@
     margin-left: auto;
     margin-right: auto;
   }
+    
 
-  /*   Logo    */
-  .logo {
-    display: flex;
-    align-items: left;
-    gap: 50px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  
-/*   Profile picture   */
-  .profile-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-pic {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
+.edu-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #0072ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+.project-tile,
+.edu-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover,
+.edu-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/*   Education sections ends here  */
+
+ 
 
   
-  
-/*   Education   */
-  .edu-item {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-left: 4px solid #0072ff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-radius: 10px;
-  }
+
 /*   Project Grids   */
   .project-grid {
     display: grid;
@@ -231,16 +277,8 @@
   transform: translateY(0);
 }
 
-.project-tile,
-.edu-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.project-tile:hover,
-.edu-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
+
 
 /*   Tools and technologies   */
 .tech-grid {
@@ -275,95 +313,7 @@
     font-weight: 500;
   }
   
-  /* EXPERIENCE SECTION */
-.timeline {
-    position: relative;
-    padding-left: 40px;
-    margin-top: 2rem;
-    border-left: 3px solid #ccc;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-left: 1.5rem;
-  }
-  
-  .timeline-icon {
-    position: absolute;
-    left: -25px;
-    top: 0;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .timeline-icon img {
-    width: 60%;
-    height: auto;
-  }
-  
-  .timeline-content {
-    background-color: #4d4a4af1;
-    color: #fff;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  }
-  
-  .timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-  
-  .timeline-content h4 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-    color: #ccc;
-  }
-  
-  .timeline-date {
-    font-size: 0.85rem;
-    color: #999;
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-  
-  .timeline-content ul {
-    padding-left: 1rem;
-    margin: 0;
-    list-style: '▹ ';
-  }
-  
-  .timeline-content li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
-  }
-  /* EXPERIENCE SECTION WRAPPER */
-#experience {
-    width: 90%;
-    margin: 0 auto;  /* center the 80% container on page */
-    text-align: left; /* makes heading and content left-aligned */
-  }
-
-  .timeline-content ul {
-    text-align: justify;
-  }
-  .timeline-icon img {
-    width: 100%;   /* Adjust this if icon feels too small or large */
-    height: auto;
-    object-fit: contain;
-  }
-  .section-title {
-    text-align: center;
-  }
-    
+ /* EXPERIENCE SECTION */
 
 
   /* Hide the nav links by default on mobile */
