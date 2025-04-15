@@ -21,7 +21,12 @@
     
     border-bottom: 2px solid #07a72a;
   }
-   
+  
+  .section { /* Adjusts each section layout */
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+ 
   /* Adjust hero-section */
   .hero-section {
     scroll-margin-top: 80px; /* Adjust based on your navbar height */
@@ -63,6 +68,10 @@
     transition: background 0.3s;
   }
   /*  hero-section ends here  */
+
+  
+
+  
 
   /*project section starts  here */
   .project-tile {
@@ -403,8 +412,7 @@
   
 /*Scroll to reveal starts  here */
 .section {
-  padding: 4rem 2rem;
-  text-align: center;/* Adjusts each section layout */
+  
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
