@@ -14,47 +14,14 @@
     scroll-behavior: smooth;
   }
   
-  header {
-    background-color: #111;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
+    /*Active section glow ends here */
+  .active-glow {
+    color: #07a72a !important;
     font-weight: bold;
-    color: #fff;
+    
+    border-bottom: 2px solid #07a72a;
   }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #00bcd4;
-  }
-  
-  .section {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
- 
+   
   /* Adjust hero-section */
   .hero-section {
     scroll-margin-top: 80px; /* Adjust based on your navbar height */
@@ -66,7 +33,23 @@
     color: white;
     padding: 6rem 2rem;
   }
-  /*  hero-section ends here  */
+  
+  
+/*   Profile picture   */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
   
   .cta-button {
     background-color: #fff;
@@ -79,27 +62,9 @@
     font-weight: bold;
     transition: background 0.3s;
   }
-  
-  .cta-button:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .skills-list li {
-    background-color: #0072ff;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    list-style: none;
-  }
-  
+  /*  hero-section ends here  */
+
+  /*project section starts  here */
   .project-tile {
     background-color: #fff;
     margin: 2rem auto;
@@ -123,7 +88,17 @@
     border-radius: 10px;
     cursor: pointer;
   }
+  /*   Project Grids   */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+   /*project section starts  here */
   
+
+   /*Contact section starts  here */
   form {
     display: flex;
     flex-direction: column;
@@ -147,6 +122,7 @@
     cursor: pointer;
     font-weight: bold;
   }
+  /*Contact section starts  here */
   
   footer {
     text-align: center;
@@ -155,13 +131,135 @@
     color: white;
   }
 
-  .active-glow {
-    color: #07a72a !important;
-    font-weight: bold;
-    
-    border-bottom: 2px solid #07a72a;
+
+
+
+  /*experience sections starts here  */
+  .exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
   }
   
+  .exp-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .exp-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .exp-text h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem; /* adds space below the heading */
+  }
+  
+  .exp-text p {
+    margin: 0.25rem 0; /* uniform spacing above and below each <p> */
+  }
+  
+  .exp-text p strong {
+    display: block; /* ensures consistent vertical flow */
+  }
+  .exp-text {
+    padding-top: 0.1rem;
+  }
+  
+  .exp-description {
+    margin-left: 4.5rem; /* Makes the description text align properly */
+  }
+  .exp-item ul {
+    margin-left: 4.5rem; /* Makes the reoles & responsibility list align properly */
+  }
+    .experience-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      
+  
+  .exp-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 4px solid #0072ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+  }
+  .project-tile,
+  .exp-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-tile:hover,
+  .exp-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+/*experience sections ends here  */
+  
+ /*Education sections starts here  */
+ .edu-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+
+
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edu-text h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem; /* adds space below the heading */
+}
+
+.edu-text p {
+  margin: 0.25rem 0; /* uniform spacing above and below each <p> */
+}
+
+.edu-text p strong {
+  display: block; /* ensures consistent vertical flow */
+}
+.edu-text {
+  padding-top: 0.1rem;
+}
+
+.edu-description {
+  margin-left: 4.5rem; /* Makes the description text align properly */
+}
 
   .education-timeline {
     display: flex;
@@ -173,64 +271,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+    
 
-  /*   Logo    */
-  .logo {
-    display: flex;
-    align-items: left;
-    gap: 50px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  
-/*   Profile picture   */
-  .profile-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-pic {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  
-  
-/*   Education   */
-  .edu-item {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-left: 4px solid #0072ff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-radius: 10px;
-  }
-/*   Project Grids   */
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-
-  .section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+.edu-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #0072ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
 }
-
-.section.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .project-tile,
 .edu-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -241,7 +290,9 @@
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+/*   Education sections ends here  */
 
+ 
 /*   Tools and technologies   */
 .tech-grid {
     display: grid;
@@ -275,95 +326,7 @@
     font-weight: 500;
   }
   
-  /* EXPERIENCE SECTION */
-.timeline {
-    position: relative;
-    padding-left: 40px;
-    margin-top: 2rem;
-    border-left: 3px solid #ccc;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-left: 1.5rem;
-  }
-  
-  .timeline-icon {
-    position: absolute;
-    left: -25px;
-    top: 0;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .timeline-icon img {
-    width: 60%;
-    height: auto;
-  }
-  
-  .timeline-content {
-    background-color: #4d4a4af1;
-    color: #fff;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  }
-  
-  .timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-  
-  .timeline-content h4 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-    color: #ccc;
-  }
-  
-  .timeline-date {
-    font-size: 0.85rem;
-    color: #999;
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-  
-  .timeline-content ul {
-    padding-left: 1rem;
-    margin: 0;
-    list-style: '▹ ';
-  }
-  
-  .timeline-content li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
-  }
-  /* EXPERIENCE SECTION WRAPPER */
-#experience {
-    width: 90%;
-    margin: 0 auto;  /* center the 80% container on page */
-    text-align: left; /* makes heading and content left-aligned */
-  }
-
-  .timeline-content ul {
-    text-align: justify;
-  }
-  .timeline-icon img {
-    width: 100%;   /* Adjust this if icon feels too small or large */
-    height: auto;
-    object-fit: contain;
-  }
-  .section-title {
-    text-align: center;
-  }
-    
+ /* EXPERIENCE SECTION */
 
 
   /* Hide the nav links by default on mobile */
@@ -438,8 +401,20 @@
   }
 }
   
-  
+/*Scroll to reveal starts  here */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;/* Adjusts each section layout */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+.section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*Scroll to reveal ends here */
   
   
   
