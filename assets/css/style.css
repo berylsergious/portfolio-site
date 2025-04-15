@@ -55,17 +55,34 @@
     border: 4px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
-  
+
+  /*  Resume button  */
   .cta-button {
-    background-color: #fff;
-    color: #0072ff;
-    padding: 0.75rem 1.5rem;
+    background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    color: #007bff;
+    padding: 0.8rem 2rem;
     border: none;
-    margin-top: 1rem;
-    border-radius: 25px;
+    margin-top: 1.2rem;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block;
+  }
+  
+  .cta-button:hover {
+    background-image: linear-gradient(to bottom,  #f8f9fa, #e9ecef);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+    color: #007bff;
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+  
+  .cta-button:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
   }
   /*  hero-section ends here  */
 
@@ -74,28 +91,73 @@
   
 
   /*project section starts  here */
+  
   .project-tile {
     background-color: #fff;
     margin: 2rem auto;
     padding: 2rem;
-    max-width: 700px;
+    width: 100%;             
+    max-width: 500px;
+    height: 100%; /* Set fixed height so container is always allocated */
+    max-height: 500px;     
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 15px;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+  .know-more-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .project-tile h3,
+  .project-tile p {
+  margin-bottom: 1rem;
+}
+
+.Know-more {
+  margin-top: auto;
+  margin-bottom: 0.5rem; /* Adjust this to move button slightly above bottom */
+}
   
   .project-tile:hover {
     transform: scale(1.02);
   }
   
-  .know-more {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
+  /*  Know more button  */
+  .Know-more {
+    background-image: linear-gradient(to bottom, #007bff, #1880e9);
+    color: #f8f9fa;
+    padding: 0.8rem 2rem;
     border: none;
-    background-color: #0072ff;
-    color: white;
-    border-radius: 10px;
+    margin-top: 1.2rem;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(243, 0, 0, 0.1);
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block;
+    width: 140px;            /* Set desired width */
+    height: 40px;
+    text-align: center;
+    
+  }
+  
+  .Know-more:hover {
+    background-image: linear-gradient(to bottom, #0080ff, #117fec);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+    text-decoration: none; /* Ensure no underline on hover */
+    color: #f8f9fa; /* Explicitly set the text color to the default */
+  }
+  
+  .Know-more:active {
+    box-shadow: 0 1px 3px rgba(0, 166, 255, 0.799);
+    transform: translateY(0);
   }
   /*   Project Grids   */
   .project-grid {
@@ -104,7 +166,33 @@
     gap: 2rem;
     margin-top: 2rem;
   }
-   /*project section starts  here */
+/*   Project video   */
+.video-container {
+  width: 100%; /* Takes full width of the parent .project-tile */
+  max-width: 500px; /* Optional: Limits max width for large screens */
+  height: 240px; /* Set fixed height so container is always allocated */
+  max-height: 800px; /* Limits the height of video container */
+  overflow: hidden; /* Hides overflow content if video exceeds */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: #00000000; /* Optional: helps visually before video loads */
+}
+
+/* You can adjust width & height here to change video size */
+.project-video {
+  width: 100%; /* Make video responsive to container width */
+  height: 100%; /* Match container height */
+  display: block;
+  border-radius: 10px;
+  object-fit: cover; /* Fill the box while maintaining aspect ratio */
+  transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+  
+  .project-tile:hover .project-video {
+    transform: scale(1.02);
+  }
+   /*project section ends  here */
   
 
    /*Contact section starts  here */
