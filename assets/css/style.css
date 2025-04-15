@@ -14,47 +14,14 @@
     scroll-behavior: smooth;
   }
   
-  header {
-    background-color: #111;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
+    /*Active section glow ends here */
+  .active-glow {
+    color: #07a72a !important;
     font-weight: bold;
-    color: #fff;
+    
+    border-bottom: 2px solid #07a72a;
   }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #00bcd4;
-  }
-  
-  .section {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
- 
+   
   /* Adjust hero-section */
   .hero-section {
     scroll-margin-top: 80px; /* Adjust based on your navbar height */
@@ -65,18 +32,6 @@
     background: linear-gradient(to right, #00c6ff, #0072ff);
     color: white;
     padding: 6rem 2rem;
-  }
-  /*  hero-section ends here  */
-
-   /*   Logo    */
-   .logo {
-    display: flex;
-    align-items: left;
-    gap: 50px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #333;
   }
   
   
@@ -107,27 +62,9 @@
     font-weight: bold;
     transition: background 0.3s;
   }
-  
-  .cta-button:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .skills-list li {
-    background-color: #0072ff;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    list-style: none;
-  }
-  
+  /*  hero-section ends here  */
+
+  /*project section starts  here */
   .project-tile {
     background-color: #fff;
     margin: 2rem auto;
@@ -151,7 +88,17 @@
     border-radius: 10px;
     cursor: pointer;
   }
+  /*   Project Grids   */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+   /*project section starts  here */
   
+
+   /*Contact section starts  here */
   form {
     display: flex;
     flex-direction: column;
@@ -175,6 +122,7 @@
     cursor: pointer;
     font-weight: bold;
   }
+  /*Contact section starts  here */
   
   footer {
     text-align: center;
@@ -183,12 +131,8 @@
     color: white;
   }
 
-  .active-glow {
-    color: #07a72a !important;
-    font-weight: bold;
-    
-    border-bottom: 2px solid #07a72a;
-  }
+
+
 
   /*experience sections starts here  */
   .exp-header {
@@ -349,31 +293,6 @@
 /*   Education sections ends here  */
 
  
-
-  
-
-/*   Project Grids   */
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-
-  .section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.section.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-
-
 /*   Tools and technologies   */
 .tech-grid {
     display: grid;
@@ -482,8 +401,20 @@
   }
 }
   
-  
+/*Scroll to reveal starts  here */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;/* Adjusts each section layout */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+.section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*Scroll to reveal ends here */
   
   
   
