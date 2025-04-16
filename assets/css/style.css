@@ -196,30 +196,68 @@
   
 
    /*Contact section starts  here */
-  form {
+   .social-button-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+    margin-top: 2rem;
+    flex-wrap: wrap;
   }
   
-  form input, form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
+  .social-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #fff;
+  }
+  .social-button,
+.social-button:hover {
+  text-decoration: none !important;
+}
+  
+  /* LinkedIn button style */
+  .linkedin-btn {
+    background-color: #0077b5;
   }
   
-  form button {
-    padding: 0.75rem;
-    background-color: #00c6ff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+  .linkedin-btn:hover {
+    background-color: #0a66c2;
+    color: #fff;
   }
-  /*Contact section starts  here */
+  
+  /* Email button style */
+  .email-btn {
+    background-color: #6c63ff;
+  }
+  
+  .email-btn:hover {
+    background-color: #5a54d1;
+    color: #fff;
+  }
+  
+  /* GitHub button style */
+  .github-btn {
+    background-color: #333;
+  }
+  
+  .github-btn:hover {
+    background-color: #000;
+     color: #fff;
+  }
+  
+  .social-button i {
+    font-size: 1.2rem;
+  }
+  
+  
+  /*Contact section ends  here */
   
   footer {
     text-align: center;
@@ -393,9 +431,10 @@
 /*   Tools and technologies   */
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
+    
   }
   
   .tech-card {
