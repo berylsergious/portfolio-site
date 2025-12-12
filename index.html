@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sergious Beryl | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Sergious</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero" class="section hero-section">
+  <header>
+   <!-- NAVBAR START -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand menus" href="#home" style="display: flex; align-items: center;">
+        <img src="assets/images/logo-icon.png" alt="Logo" style="width: 48px; height: 48px; margin-right: 8px;">
+        Sergious Beryl
+      </a>
+    </div>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="portfolio-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a class="nav-link section-anchor" href="#home">About</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link section-anchor" href="#contact">Contact</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+  </header>
+  
+
+  <section id="home" class="section hero-section">
+    <div class="profile-container">
+      <img src="assets/images/Profile-Pic.png" alt="Profile Picture" class="profile-pic">
+    </div>
     <h1>Hi, I'm Sergious Beryl</h1>
-    <p>Aspiring QA Automation Engineer | Java | Selenium | TestNG</p>
+    <p>Quality Engineer (Manual + Automation) | Java • Selenium • TestNG • API Testing</p>
     <p> </p>
-    <a href="#contact" class="cta-button">Get in Touch</a>
+    <a href="assets/docs/Sergious_Resume_Enhanced.pdf" class="cta-button" download>Download Resume</a>
   </section>
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Short bio goes here...</p>
+    <p>I'm an aspiring Quality Engineer with hands-on experience in Java, Selenium, TestNG, and web technologies. Driven by a passion for clean code and effective testing, I'm dedicated to solving real-world problems and am always eager to learn and automate repetitive tasks. I'm keen to contribute to high-quality software delivery within a company that provides innovative digital solutions and drives impactful IT transformations in business processes.</p>
   </section>
 
 
@@ -38,23 +71,23 @@
 
   <section id="skills" class="section">
     <h2>Skills</h2>
-    <section id="technologies" class="section">
         <h3>Technologies and Tools</h3>
-        <p>Using a combination of cutting-edge technologies and reliable open-source software I build user-focused, performant apps and websites for smartphones, tablets, and desktops.</p>
+        <p>My go-to toolkit for designing, implementing, and executing effective QA automation strategies, which involves using a combination of cutting-edge technologies and reliable open-source software.</p>
         <div class="tech-grid">
           <!-- Example card -->
-          <div class="tech-card"><img src="assets/images/tools/html.png" alt="html"><span>html</span></div>
-          <div class="tech-card"><img src="assets/images/tools/java.png" alt="java"><span>java</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool3.png" alt="tool 3"><span>tool 3</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool4.png" alt="tool 4"><span>tool 4</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool5.png" alt="tool 5"><span>tool 5</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool6.png" alt="tool 6"><span>tool 6</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool7.png" alt="tool 7"><span>tool 7</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool8.png" alt="tool 8"><span>tool 8</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool9.png" alt="tool 9"><span>tool 9</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool10.png" alt="tool 10"><span>tool 10</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool11.png" alt="tool 11"><span>tool 11</span></div>
-          <div class="tech-card"><img src="assets/images/tools/tool12.png" alt="tool 12"><span>tool 12</span></div>
+          <div class="tech-card"><img src="assets/images/tools/html.png" alt="html"><span>HTML</span></div>
+          <div class="tech-card"><img src="assets/images/tools/java.png" alt="java"><span>Java</span></div>
+          <div class="tech-card"><img src="assets/images/tools/eclipse-ide.png" alt="Eclipse"><span>Eclipse IDE</span></div>
+          <div class="tech-card"><img src="assets/images/tools/Selenium.png" alt="Selenium"><span>Selenium</span></div>
+          <div class="tech-card"><img src="assets/images/tools/cucumber-logo.png" alt="cucumber"><span>cucumber</span></div>
+          <div class="tech-card"><img src="assets/images/tools/mysql.png" alt="MySQL"><span>MySQL</span></div>
+          <div class="tech-card"><img src="assets/images/tools/Jenkins.png" alt="Jenkins"><span>Jenkins</span></div>
+          <div class="tech-card"><img src="assets/images/tools/github.png" alt="github"><span>github</span></div>
+          <div class="tech-card"><img src="assets/images/tools/TestNG.png" alt="TestNG"><span>TestNG</span></div>
+          <div class="tech-card"><img src="assets/images/tools/excel.png" alt="Excel"><span>Excel</span></div>
+          <div class="tech-card"><img src="assets/images/tools/Postman.png" alt="Postman"><span>Postman</span></div>
+          <div class="tech-card"><img src="assets/images/tools/jira.png" alt="jira"><span>Jira</span></div>
+          <div class="tech-card"><img src="assets/images/tools/TestRail.png" alt="TestRail"><span>TestRail</span></div>
           <!-- Keep adding more as needed -->
         </div>
       </section>
@@ -69,96 +102,184 @@
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="project-grid">
+        
       <div class="project-tile">
+        <div class="video-container">
+          <img class="project-video" src="assets/images/projects/project1-icon_.png" alt="Project Thumbnail" loading="lazy">
+        </div>
         <h3>Portfolio Website</h3>
         <p>Personal responsive website built using HTML, CSS, and JavaScript. Deployed via GitHub Pages.</p>
-        <button class="know-more" data-info="Built from scratch with reusable components and mobile-first layout.">Know More</button>
+        <div class="know-more-button-wrapper">
+          <a href="https://github.com/berylsergious/portfolio-site" class="Know-more" target="_blank">Know More</a>
+        </div>
       </div>
+
       <div class="project-tile">
-        <h3>Weather App</h3>
-        <p>JavaScript-based weather app using OpenWeatherMap API to fetch real-time data.</p>
-        <button class="know-more" data-info="Includes error handling, location auto-detect, and responsive design.">Know More</button>
-      </div>
-    </div>
-  </section>
-  
-  <section id="experience" class="section">
-    <h2 class="section-title">Work Experience</h2>
-    <div class="timeline">
-  
-      <!-- Experience Block 1 -->
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="assets/images/exp/IMU.png" alt="Bluechip Logo">
+        <div class="video-container">
+          <video class="project-video" muted loop playsinline preload="none" poster="assets/images/projects/red.jpg" loading="lazy">
+            <source src="assets/videos/red.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="timeline-content">
-          <h3>Software Engineer</h3>
-          <h4>Bluechip Technologies | Internship</h4>
-          <span class="timeline-date">Mar 2024 – Sept 2024</span>
-          <ul>
-            <li>Developed fully responsive sidebars for an API marketplace using ChakraUI with context menus and modals.</li>
-            <li>Built a reusable table component reducing code by 15% and improving maintainability.</li>
-            <li>Collaborated with a senior frontend engineer using GitHub effectively for development.</li>
-            <li>Worked on a Learning Management System using Bootstrap and React Bootstrap.</li>
-            <li>Integrated 7 endpoints in RBAC module of Revenue Assurance app for CRUD operations.</li>
-            <li>Developed HTML templates for partner companies including KPMG.</li>
-          </ul>
-        </div>
-      </div>
-  
-      <!-- Experience Block 2 -->
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="assets/images/exp/nnpc.png" alt="NNPC Logo">
-        </div>
-        <div class="timeline-content">
-          <h3>Intern</h3>
-          <h4>NNPC | Internship</h4>
-          <span class="timeline-date">July 2023 – Sept 2023</span>
-          <ul>
-            <li>Created login & sign-up page designs that became core tools used in the company.</li>
-            <li>Led intern team designing UI components like dashboards, tabs, tables, and multi-step forms.</li>
-            <li>Helped interns grasp design fundamentals for impactful contributions.</li>
-          </ul>
+        <h3>RedBus Data-Driven Automation Framework</h3>
+        <p>Automated test framework for RedBus.in implementing Data-Driven Testing (DDT). Read test data from a CSV, fetch data from Redbus, and write output back to CSV.</p>
+        <div class="know-more-button-wrapper">
+          <a href="https://github.com/berylsergious/redbus-ddt-automation" class="Know-more" target="_blank">Know More</a>
         </div>
       </div>
   
     </div>
   </section>
+  
+
+<!-- Experience -->
+<section id="experience" class="section">
+  <h2>Work experience</h2>
+  <div class="experience-timeline">
+    <!--experience item 1 -->
+    <div class="exp-item">
+      <div class="exp-header">
+        <div class="exp-logo">
+          <img src="assets/images/exp/WTG.png" alt="Institute Logo">
+        </div>
+        <div class="exp-text">
+          <h3>WiseTech Global</h3>
+          <p><strong>Quality Engineer</strong></p>
+          <p>Apr 2024 — Present</p>
+        </div>
+      </div>
+      <p class="exp-description">
+      </p>
+      <ul>
+        <li>Automated UI validation for logistics web apps (Shipment Tracking, Order Management) using Selenium WebDriver within a BDD/Hybrid framework (Cucumber, Java, TestNG) implementing Page Object Model (POM).</li>
+        <li>Proficient in Java programming concepts (OOPs, Collections, Exception Handling).</li>
+        <li>Analysed real-time data using MongoDB and MySQL, identifying critical patterns and trends that improved estimated delivery prediction accuracy by ~ 5% and improving logistic feasibility calculations.</li>
+        <li>Performed API testing using Postman and Swagger, validating REST endpoints (GET/POST/PUT/DELETE) and Kafka/JSON payloads to ensure seamless integration between supply chain modules.</li>
+        <li>Reduced test data creation time by 90% by implementing reusable “Excel/CS to JSON” converters along with automated Kafka message posting to test IOT alerts module.</li>
+      </ul>
+    </div>
+    <!--experience item 1 -->
+    
+
+    <!--experience item 2 -->
+    <div class="exp-item">
+      <div class="exp-header">
+        <div class="exp-logo">
+          <img src="assets/images/exp/BG.png" alt="Institute Logo">
+        </div>
+        <div class="exp-text">
+          <h3>Blume Global</h3>
+          <p><strong>Associate Analyst</strong></p>
+          <p>Jun 2022 — Mar 2024</p>
+        </div>
+      </div>
+      <p class="exp-description">
+      </p>
+      <ul>
+        <li>Spearheaded hyper care and product release support activities, including test effort estimation, test planning, and crafting detailed project synopsis documents, ensuring smooth post-release transitions utilizing tools like Jira and Confluence.</li>
+        <li>Acted as a liaison between the Product team and Development team, managing communication and prioritization of critical scope tickets based on Agile methodology, reducing delays in project timelines.</li>
+        <li>Received the Medallion Award for Outstanding Performance and Dedication in Q3 2022.</li>
+      </ul>
+    </div>
+  <!--experience item 2 -->
+    
+  </div>
+</section>
+<!-- Experience -->
   
 
 <!--education section  -->
   <section id="education" class="section">
     <h2>Education</h2>
     <div class="education-timeline">
+      <!--education item 1 -->
       <div class="edu-item">
-        <h3>Bachelor of Engineering in Computer Science</h3>
-        <p><strong>XYZ Institute of Technology</strong> | 2016 – 2020</p>
-        <p>Graduated with distinction. Key coursework included Data Structures, Operating Systems, and Software Engineering.</p>
+        <div class="edu-header">
+          <div class="edu-logo">
+            <img src="assets/images/edu/IMU.png" alt="Institute Logo">
+          </div>
+          <div class="exp-text">
+            <h3>MBA — International Transportation & Logistics</h3>
+            <p><strong>Indian Maritime University, Chennai, Tamil Nadu.</strong></p>
+            <p>Dec 2020 — Jun 2022</p>
+          </div>
+        </div>
+        <p class="edu-description">
+          
+        </p>
       </div>
+      <!--education item 1 -->
+      
+
+      <!--education item 2 -->
       <div class="edu-item">
-        <h3>Pre-University</h3>
-        <p><strong>ABC PU College</strong> | 2014 – 2016</p>
-        <p>Completed with 91% in PCM stream.</p>
+        <div class="edu-header">
+          <div class="edu-logo">
+            <img src="assets/images/edu/jpr.png" alt="Institute Logo">
+          </div>
+          <div class="exp-text">
+            <h3>BE — Mechanical Engineering</h3>
+            <p><strong>Jeppiaar Engineering College, Anna University, Chennai, Tamil Nadu.</strong></p>
+            <p>May 2015 — Apr 2019</p>
+          </div>
+        </div>
+        <p class="edu-description">
+         
+        </p>
       </div>
+    <!--education item 2 -->
+      <!--education item 3 -->
+      <div class="edu-item">
+        <div class="edu-header">
+          <div class="edu-logo">
+            <img src="assets/images/edu/CMHSS.png" alt="Institute Logo" style="width: 70px; height: 70px; margin-right: 1px;">
+          </div>
+          <div class="exp-text">
+            <h3>Higher Secondary School</h3>
+            <p><strong>Christuraja School, Marthandam, Kanyakumari, Tamil Nadu.</strong></p>
+            <p>May 2015 — Apr 2019</p>
+          </div>
+        </div>
+        <p class="edu-description">
+          
+        </p>
+      </div>
+    <!--education item 3 -->
+
     </div>
   </section>
+  <!--education section ends here -->
   
 
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <h2>Contact</h2>
+    <div class="social-button-wrapper">
+      <a href="https://www.linkedin.com/in/sergious-beryl-b7b005161/" target="_blank" class="social-button linkedin-btn">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="mailto:berylsergious@gmail.com" class="social-button email-btn">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <a href="https://github.com/berylsergious" target="_blank" class="social-button github-btn">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
   </section>
+  
+  
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Sergious Beryl. All rights reserved.</p>
   </footer>
+<!-- Bootstrap 3.4.1 JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
   <script src="assets/js/script.js"></script>
+  
 </body>
 </html>

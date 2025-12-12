@@ -5,53 +5,36 @@
     box-sizing: border-box;
   }
   
+  
   /* Base styles */
   body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #333;
     scroll-behavior: smooth;
   }
   
-  header {
-    background-color: #111;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
+    /*Active section glow ends here */
+  .active-glow {
+    color: #07a72a !important;
     font-weight: bold;
-    color: #fff;
+    
+    border-bottom: 2px solid #07a72a;
   }
   
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #00bcd4;
-  }
-  
-  .section {
+  .section { /* Adjusts each section layout */
     padding: 4rem 2rem;
     text-align: center;
+    max-width: 1500px;   /* Set your preferred max width */
+    margin: 0 auto;      /* Center the section horizontally */
+    box-sizing: border-box; /* Keeps padding inside width */
+  }
+  /* Adjust hero-section */
+  .hero-section {
+    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+    padding-top: 80px;       /* Optional: keeps content visible if manually scrolled */
+    max-width: unset;
+    margin: 0;
   }
   
   .hero-section {
@@ -60,85 +43,225 @@
     padding: 6rem 2rem;
   }
   
+  
+/*   Profile picture   */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /*  Resume button  */
   .cta-button {
-    background-color: #fff;
-    color: #0072ff;
-    padding: 0.75rem 1.5rem;
+    background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    color: #007bff;
+    padding: 0.8rem 2rem;
     border: none;
-    margin-top: 1rem;
-    border-radius: 25px;
+    margin-top: 1.2rem;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block;
   }
   
   .cta-button:hover {
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom,  #f8f9fa, #e9ecef);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+    color: #007bff;
+    text-decoration: none; /* Ensure no underline on hover */
   }
   
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+  .cta-button:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
   }
+  /*  hero-section ends here  */
+
   
-  .skills-list li {
-    background-color: #0072ff;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    list-style: none;
-  }
+
+  
+
+  /*project section starts  here */
   
   .project-tile {
     background-color: #fff;
     margin: 2rem auto;
     padding: 2rem;
-    max-width: 700px;
+    width: 100%;             
+    max-width: 500px;
+    height: 100%; /* Set fixed height so container is always allocated */
+    max-height: 500px;     
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 15px;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+  .know-more-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .project-tile h3,
+  .project-tile p {
+  margin-bottom: 1rem;
+}
+
+.Know-more {
+  margin-top: auto;
+  margin-bottom: 0.5rem; /* Adjust this to move button slightly above bottom */
+}
   
   .project-tile:hover {
     transform: scale(1.02);
   }
   
-  .know-more {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
+  /*  Know more button  */
+  .Know-more {
+    background-image: linear-gradient(to bottom, #007bff, #1880e9);
+    color: #f8f9fa;
+    padding: 0.8rem 2rem;
     border: none;
-    background-color: #0072ff;
-    color: white;
-    border-radius: 10px;
+    margin-top: 1.2rem;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(243, 0, 0, 0.1);
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block;
+    width: 140px;            /* Set desired width */
+    height: 40px;
+    text-align: center;
+    
   }
   
-  form {
+  .Know-more:hover {
+    background-image: linear-gradient(to bottom, #0080ff, #117fec);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+    text-decoration: none; /* Ensure no underline on hover */
+    color: #f8f9fa; /* Explicitly set the text color to the default */
+  }
+  
+  .Know-more:active {
+    box-shadow: 0 1px 3px rgba(0, 166, 255, 0.799);
+    transform: translateY(0);
+  }
+  /*   Project Grids   */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+/*   Project video   */
+.video-container {
+  width: 100%; /* Takes full width of the parent .project-tile */
+  max-width: 500px; /* Optional: Limits max width for large screens */
+  height: 240px; /* Set fixed height so container is always allocated */
+  max-height: 800px; /* Limits the height of video container */
+  overflow: hidden; /* Hides overflow content if video exceeds */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: #00000000; /* Optional: helps visually before video loads */
+}
+
+/* You can adjust width & height here to change video size */
+.project-video {
+  width: 100%; /* Make video responsive to container width */
+  height: 100%; /* Match container height */
+  display: block;
+  border-radius: 10px;
+  object-fit: cover; /* Fill the box while maintaining aspect ratio */
+  transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+  
+  .project-tile:hover .project-video {
+    transform: scale(1.02);
+  }
+   /*project section ends  here */
+  
+
+   /*Contact section starts  here */
+   .social-button-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+    margin-top: 2rem;
+    flex-wrap: wrap;
   }
   
-  form input, form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
+  .social-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #fff;
+  }
+  .social-button,
+.social-button:hover {
+  text-decoration: none !important;
+}
+  
+  /* LinkedIn button style */
+  .linkedin-btn {
+    background-color: #0077b5;
   }
   
-  form button {
-    padding: 0.75rem;
-    background-color: #00c6ff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+  .linkedin-btn:hover {
+    background-color: #0a66c2;
+    color: #fff;
   }
+  
+  /* Email button style */
+  .email-btn {
+    background-color: #6c63ff;
+  }
+  
+  .email-btn:hover {
+    background-color: #5a54d1;
+    color: #fff;
+  }
+  
+  /* GitHub button style */
+  .github-btn {
+    background-color: #333;
+  }
+  
+  .github-btn:hover {
+    background-color: #000;
+     color: #fff;
+  }
+  
+  .social-button i {
+    font-size: 1.2rem;
+  }
+  
+  
+  /*Contact section ends  here */
   
   footer {
     text-align: center;
@@ -147,11 +270,135 @@
     color: white;
   }
 
-  .nav-links a.active {
-    color: #00c6ff;
-    font-weight: bold;
-    border-bottom: 2px solid #00c6ff;
+
+
+
+  /*experience sections starts here  */
+  .exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
   }
+  
+  .exp-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .exp-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .exp-text h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem; /* adds space below the heading */
+  }
+  
+  .exp-text p {
+    margin: 0.25rem 0; /* uniform spacing above and below each <p> */
+  }
+  
+  .exp-text p strong {
+    display: block; /* ensures consistent vertical flow */
+  }
+  .exp-text {
+    padding-top: 0.1rem;
+  }
+  
+  .exp-description {
+    margin-left: 4.5rem; /* Makes the description text align properly */
+  }
+  .exp-item ul {
+    margin-left: 4.5rem; /* Makes the reoles & responsibility list align properly */
+  }
+    .experience-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      
+  
+  .exp-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 4px solid #0072ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+  }
+  .project-tile,
+  .exp-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-tile:hover,
+  .exp-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+/*experience sections ends here  */
+  
+ /*Education sections starts here  */
+ .edu-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+
+
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edu-text h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem; /* adds space below the heading */
+}
+
+.edu-text p {
+  margin: 0.25rem 0; /* uniform spacing above and below each <p> */
+}
+
+.edu-text p strong {
+  display: block; /* ensures consistent vertical flow */
+}
+.edu-text {
+  padding-top: 0.1rem;
+}
+
+.edu-description {
+  margin-left: 4.5rem; /* Makes the description text align properly */
+}
 
   .education-timeline {
     display: flex;
@@ -163,34 +410,15 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-/*   Education   */
-  .edu-item {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-left: 4px solid #0072ff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-radius: 10px;
-  }
-/*   Project Grids   */
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
+    
 
-  .section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+.edu-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #0072ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
 }
-
-.section.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .project-tile,
 .edu-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -201,13 +429,16 @@
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+/*   Education sections ends here  */
 
+ 
 /*   Tools and technologies   */
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
+    
   }
   
   .tech-card {
@@ -235,95 +466,94 @@
     font-weight: 500;
   }
   
-  /* EXPERIENCE SECTION */
-.timeline {
-    position: relative;
-    padding-left: 40px;
-    margin-top: 2rem;
-    border-left: 3px solid #ccc;
+ /* EXPERIENCE SECTION */
+
+
+  /* Hide the nav links by default on mobile */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-icon:before,
+.hamburger-icon:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-icon:before {
+  top: -10px;
+}
+
+.hamburger-icon:after {
+  bottom: -10px;
+}
+
+/* Show the hamburger button and hide nav links in mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger in mobile view */
   }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-left: 1.5rem;
-  }
-  
-  .timeline-icon {
+
+  .nav-links {
+    display: none; /* Hide the nav links initially */
+    width: 100%;
+    text-align: center;
     position: absolute;
-    left: -25px;
     top: 0;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .timeline-icon img {
-    width: 60%;
-    height: auto;
-  }
-  
-  .timeline-content {
-    background-color: #4d4a4af1;
-    color: #fff;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  }
-  
-  .timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-  
-  .timeline-content h4 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-    color: #ccc;
-  }
-  
-  .timeline-date {
-    font-size: 0.85rem;
-    color: #999;
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-  
-  .timeline-content ul {
-    padding-left: 1rem;
-    margin: 0;
-    list-style: '▹ ';
-  }
-  
-  .timeline-content li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
-  }
-  /* EXPERIENCE SECTION WRAPPER */
-#experience {
-    width: 90%;
-    margin: 0 auto;  /* center the 80% container on page */
-    text-align: left; /* makes heading and content left-aligned */
+    left: 0;
+    background-color: white;
+    padding-top: 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .timeline-content ul {
-    text-align: justify;
+  .nav-links.active {
+    display: block; /* Show nav links when hamburger is clicked */
   }
-  .timeline-icon img {
-    width: 100%;   /* Adjust this if icon feels too small or large */
-    height: auto;
-    object-fit: contain;
-  }
-    
-  
-  
 
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+  
+/*Scroll to reveal starts  here */
+.section {
+  
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*Scroll to reveal ends here */
   
   
   
