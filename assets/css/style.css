@@ -9,7 +9,7 @@
   /* Base styles */
   body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #333;
     scroll-behavior: smooth;
   }
@@ -25,12 +25,16 @@
   .section { /* Adjusts each section layout */
     padding: 4rem 2rem;
     text-align: center;
+    max-width: 1500px;   /* Set your preferred max width */
+    margin: 0 auto;      /* Center the section horizontally */
+    box-sizing: border-box; /* Keeps padding inside width */
   }
- 
   /* Adjust hero-section */
   .hero-section {
     scroll-margin-top: 80px; /* Adjust based on your navbar height */
     padding-top: 80px;       /* Optional: keeps content visible if manually scrolled */
+    max-width: unset;
+    margin: 0;
   }
   
   .hero-section {
